@@ -34,7 +34,9 @@ class AeroplanesAPI(BaseAPI):
         try:
             # Добавляем заголовок User-Agent, чтобы API нас не блокировал
             headers = {
-                "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+                "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+                              "AppleWebKit/537.36 (KHTML, like Gecko) "
+                              "Chrome/91.0.4472.114 Safari/537.36"
             }
             response = requests.get(self.nominatim_url, params=params, headers=headers)
             response.raise_for_status()
