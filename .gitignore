@@ -6,3 +6,6 @@ aeroplanes.json
 .coverage
 htmlcov/
 .pytest_cache/
+
+venv/
+.venv/
